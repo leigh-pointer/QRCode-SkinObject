@@ -1,0 +1,58 @@
+<dotnetnuke type="Package" version="5.0">
+    <packages>
+        <package name="QRCode" type="SkinObject" version="01.00.00">
+            <friendlyName>QRCode</friendlyName>
+            <description>
+                Subzero Solutions QRCode SkinObject
+                QR codes are a popular type of two-dimensional barcode.
+                They are also known as hardlinks or physical world hyperlinks.
+                This SkinObject converts the current URL of the page to a QRCode.
+                
+            </description>
+            <owner>
+                <name>Leigh Pointer</name>
+                <organization>Subzero Solutions</organization>
+                <url>http://www.Subzero-Solutions.net</url>
+                <email>support@subzero-solutions.net</email>
+            </owner>
+            <license>
+                Copyright (c) 2011  Subzero Solutions
+                All rights reserved.
+
+                THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED
+                TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL
+                THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF
+                CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+                DEALINGS IN THE SOFTWARE.
+            </license>
+            <releaseNotes>
+                Release 01.00.00
+            </releaseNotes>
+            <components>
+                <component type="SkinObject">
+                    <moduleControl>
+                        <controlKey>SS_QRCODE</controlKey>
+                        <controlSrc>DesktopModules/SubzeroSolutions/SkinObjects/QRCode/QRCode.ascx</controlSrc>
+                        <supportsPartialRendering>False</supportsPartialRendering>
+                    </moduleControl>
+                </component>
+                <component type="File">
+                    <files>
+                        <basePath>DesktopModules\SubzeroSolutions\SkinObjects\QRCode</basePath>
+                        <file>
+                            <name>QRCode.ascx</name>
+                        </file>
+                    </files>
+                </component>
+                <component type="Assembly">
+                    <assemblies>
+                        <basePath>bin</basePath>
+                        <assembly>
+                            <name>SubzeroSolutions.QRCode.dll</name>
+                        </assembly>
+                    </assemblies>
+                </component>
+            </components>
+        </package>
+    </packages>
+</dotnetnuke>
